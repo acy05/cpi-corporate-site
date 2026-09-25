@@ -1,0 +1,6 @@
+.DS_Store
+.web-workflow/
+reference-*.png
+tools/
+QA_REPORT.md
+assets/images/*.png
