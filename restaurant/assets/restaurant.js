@@ -70,6 +70,7 @@
     pauseButton.setAttribute('aria-label', stopped ? '動きを再生する' : '動きを停止する');
     pauseButton.disabled = reducedMotion.matches;
     if (stopped) revealElements.forEach(element => element.classList.add('visible'));
+    document.dispatchEvent(new CustomEvent('cpi:motion', { detail: { stopped } }));
     scheduleMotion();
   };
   pauseButton.addEventListener('click', () => { paused = !paused; applyMotionPreference(); });
@@ -99,7 +100,7 @@
     });
   });
 
-  const assetRoot = new URL('.', document.querySelector('script[src$="restaurant.js"]').src);
+  const assetRoot = new URL('.', document.querySelector('script[src*="assets/restaurant.js"]').src);
   const dishes = {
     karaage: { title: '唐揚げ定食', image: 'karaage.webp', description: 'からっとした衣と、じゅわっと広がる旨み。レモンを少ししぼって、最後のひと口まで。CPI食堂の顔になる、唐揚げ定食のご提案です。', includes: 'ごはん・味噌汁・小鉢付き（提案内容）' },
     shogayaki: { title: '生姜焼き定食', image: 'shogayaki.webp', description: '香る生姜と甘辛いたれを、豚肉と玉ねぎにからめて。ごはんと一緒に頬張りたい、定番の定食のご提案です。', includes: 'ごはん・味噌汁・小鉢付き（提案内容）' },
