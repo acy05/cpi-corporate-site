@@ -102,8 +102,8 @@
 
   const assetRoot = new URL('.', document.querySelector('script[src*="assets/restaurant.js"]').src);
   const dishes = {
-    karaage: { title: '唐揚げ弁当', image: 'bento.webp', description: 'からっとした衣と、じゅわっと広がる旨み。ごはんとおかずをひと箱に詰めて、最後のひと口まで。CPIのお弁当の顔になる、唐揚げ弁当のご提案です。', includes: 'ごはん・おかず・付け合わせ付き（提案内容）' },
-    shogayaki: { title: '生姜焼き弁当', image: 'shogayaki.webp', description: '香る生姜と甘辛いたれを、豚肉と玉ねぎにからめて。ごはんと一緒に頬張りたい、定番のお弁当のご提案です。', includes: 'ごはん・おかず・付け合わせ付き（提案内容）' },
+    karaage: { title: '唐揚げ弁当', image: 'karaage-bento-natural.webp', description: 'からっとした衣と、じゅわっと広がる旨み。ごはんとおかずをひと箱に詰めて、最後のひと口まで。CPIのお弁当の顔になる、唐揚げ弁当のご提案です。', includes: 'ごはん・おかず・付け合わせ付き（提案内容）' },
+    shogayaki: { title: '生姜焼き弁当', image: 'shogayaki-bento-natural.webp', description: '香る生姜と甘辛いたれを、豚肉と玉ねぎにからめて。ごはんと一緒に頬張りたい、定番のお弁当のご提案です。', includes: 'ごはん・おかず・付け合わせ付き（提案内容）' },
     side: { title: '唐揚げを、もう少し。', image: 'karaage.webp', description: 'もう少し食べたいときや、誰かと分け合いたいときに。お弁当と組み合わせられる、単品の唐揚げをご提案しています。', includes: '単品メニュー（数量・価格は未確定）' }
   };
   const dialog = document.querySelector('.dish-dialog');
