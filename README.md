@@ -1,5 +1,14 @@
 # 株式会社CPI コーポレートサイト 2案
 
+## 飲食店サイト（2026-10-08追加）
+
+- `restaurant/`: 唐揚げなどの定食屋を想定した動的版
+- `restaurant/calm/`: 同一内容のアニメーション控えめ版
+- `restaurant/README.md`: 仕様・参考・検証・未確定情報
+- 更新後は `node tools/build-restaurant.mjs` で控えめ版を共通HTMLから生成
+
+既存のコーポレートサイトは以下のURLに保持しています。
+
 - `static/`: アニメーションなし
 - `motion/`: アニメーションあり
 - `index.html`: 2案の選択画面
