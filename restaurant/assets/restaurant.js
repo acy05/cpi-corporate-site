@@ -102,9 +102,9 @@
 
   const assetRoot = new URL('.', document.querySelector('script[src*="assets/restaurant.js"]').src);
   const dishes = {
-    karaage: { title: '唐揚げ弁当', image: 'karaage-bento-natural.webp', description: 'からっとした衣と、じゅわっと広がる旨み。ごはんとおかずをひと箱に詰めて、最後のひと口まで。CPIのお弁当の顔になる、唐揚げ弁当のご提案です。', includes: 'ごはん・おかず・付け合わせ付き（提案内容）' },
-    shogayaki: { title: '生姜焼き弁当', image: 'shogayaki-bento-natural.webp', description: '香る生姜と甘辛いたれを、豚肉と玉ねぎにからめて。ごはんと一緒に頬張りたい、定番のお弁当のご提案です。', includes: 'ごはん・おかず・付け合わせ付き（提案内容）' },
-    side: { title: '唐揚げを、もう少し。', image: 'karaage.webp', description: 'もう少し食べたいときや、誰かと分け合いたいときに。お弁当と組み合わせられる、単品の唐揚げをご提案しています。', includes: '単品メニュー（数量・価格は未確定）' }
+    karaage: { title: '調理・仕込み', image: 'karaage-bento-natural.webp', description: '食材の準備や下ごしらえ、おかずの調理など、お弁当づくりを支える仕事の紹介案です。衛生管理や調理手順を含め、実際の担当範囲は正式な募集内容を確認後に掲載します。', includes: '仕事内容の紹介案／募集職種・経験要件・研修制度は未確認' },
+    shogayaki: { title: '盛付け・お渡し', image: 'shogayaki-bento-natural.webp', description: 'おかずやごはんの盛付け、包装、お渡しなどを伝える紹介案です。接客・会計・清掃を含めた実際の担当業務は、正式な募集内容を確認後にご案内します。', includes: '仕事内容の紹介案／担当業務・勤務時間・勤務地は未確定' },
+    side: { title: '応募前の確認項目', image: 'karaage.webp', description: '募集職種、雇用形態、勤務地、給与・待遇、勤務時間・休日、応募資格、選考方法をご確認ください。正式な条件と応募窓口が決まり次第、募集要項へ掲載します。現在、このサイトでは応募を受け付けていません。', includes: '募集条件・応募方法は確認中／会社所在地は勤務先を示しません' }
   };
   const dialog = document.querySelector('.dish-dialog');
   let dialogTrigger = null;

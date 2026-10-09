@@ -1,0 +1,9 @@
+/* Recruitment content only. Original motion styles and timings are unchanged. */
+.application-status{margin-top:28px;padding:20px;border:1px solid #626d50;background:#f5efdf80;font-size:14px;line-height:1.9}
+.application-status strong{display:block;color:#672e22;margin-bottom:8px}
+.application-status p{font-size:14px!important;line-height:1.9!important}
+.info-details dt{font-size:13px}.info-details dd{font-size:14px;line-height:1.85}
+.info-details dl>div{grid-template-columns:minmax(110px,.9fr) minmax(0,1.4fr)}
+.menu-tabs button{white-space:nowrap}.info-lead small{display:inline-block}
+@media(max-width:700px){.info-details dl>div{grid-template-columns:1fr;gap:6px;padding:16px 0}.info-details dt{font-size:13px}.info-details dd{font-size:14px}.application-status{padding:18px}.menu-tabs button{font-size:13px;padding-inline:12px}.menu-tabs button span{margin-left:8px}}
+@media(max-width:360px){.menu-tabs button span{display:none}}
